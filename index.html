@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
+<html>
+    <head>
+        <title>Jeu Cool Online</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> </head>
+    <body style='background-color:rgb(200,200,200)'>
+        <div class='container-fluid'>
+            <div class='row'>
+                <div class='col-4'></div>
+                <div class='col-4' style='margin-top:1%;'>
+                    <h1 id='maelikledieu' style='text-align:center;border:solid 1px black;'>Jeu Cool Online</h1>
+
+                    <input type='button' class='btn btn-info fdp' value='Click ta mère'>
+                    <input type='button' class='btn btn-info fdp2' value='Click ton père'>
+                    <div id='maelik' style="display:none;">
+                        maelik aime les hommes
+                    </div>
+
+                    <script>
+                        $(".fdp").click(function () {
+                            $("#maelikledieu").css("background-color", "pink");
+                            $("#maelik").show();
+                            //var number = Math.floor((Math.random() * 10) + 1);
+                        });
+                        $(".fdp2").click(function () {
+                            $("#maelikledieu").css("background-color", "red");
+                            $("#maelik").hide();
+                            //var number = Math.floor((Math.random() * 10) + 1);
+                        });
+                    </script>
+                </div>
+                <div class='col-4'></div>
+            </div>
+        </div>
+    </body>
 </html>
