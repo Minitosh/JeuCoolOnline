@@ -1,4 +1,6 @@
-class Actor {
+
+
+export default class Actor {
     constructor(name, strenght, pv,  image) {
         this._name = name;
         this._strenght = strenght;

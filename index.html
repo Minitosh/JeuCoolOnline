@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Jeu Cool Online</title>
+    <script type="module" src="./Actor.js"></script>
+    <script type="module" src="./Player.js"></script>
+    <script type="module" src="./Monster.js"></script>
 </head>
 <body>
+<script type="text/javascript">
+    import Player from "Player.js";
+    import Monster from "Monster.js";
 
+    var player = new Player("Dylan","50","100","");
+    var monster = new Monster("Golzor","200","500","")
+
+    monster.fight()
+
+</script>
 </body>
 </html>
