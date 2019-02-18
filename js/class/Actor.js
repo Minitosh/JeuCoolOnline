@@ -1,9 +1,7 @@
-
-
 export default class Actor {
-    constructor(name, strenght, pv,  image) {
+    constructor(name, strength, pv,  image) {
         this._name = name;
-        this._strenght = strenght;
+        this._strength = strength;
         this._pv = pv;
         this._image = image;
     }
@@ -24,12 +22,12 @@ export default class Actor {
         this._image = value;
     }
 
-    get strenght() {
-        return this._strenght;
+    get strength() {
+        return this._strength;
     }
 
-    set strenght(value) {
-        this._strenght = value;
+    set strength(value) {
+        this._strength = value;
     }
 
 
