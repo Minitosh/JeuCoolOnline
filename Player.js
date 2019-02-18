@@ -1,9 +1,9 @@
 class Player extends Actor {
-    constructor(name, image) {
-        super(name, image); // appelle le constructeur parent avec le paramètre
+    constructor(name, strenght, pv, image) {
+        super(name, strenght, pv, image); // appelle le constructeur parent avec le paramètre
     }
 
     fight() {
-        console.log("fight-Monster")
+        console.log("fight-Player")
     }
 }
