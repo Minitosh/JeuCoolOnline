@@ -19,4 +19,8 @@ class Actor {
     set image(value) {
         this._image = value;
     }
+
+    fight() {
+        console.log("fight")
+    }
 }
