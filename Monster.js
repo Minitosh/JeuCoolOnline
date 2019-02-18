@@ -4,6 +4,6 @@ class Monster extends Actor {
     }
 
     fight() {
-        console.log("fight-Monster")
+        console.log("fight-Monstr")
     }
 }
