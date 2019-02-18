@@ -1,4 +1,4 @@
-class Rectangle {
+class Actor {
     constructor(name, image) {
         this._name = name;
         this._image = image;
