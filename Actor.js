@@ -1,6 +1,8 @@
 class Actor {
-    constructor(name, image) {
+    constructor(name, strenght, pv,  image) {
         this._name = name;
+        this._strenght = strenght;
+        this._pv = pv;
         this._image = image;
     }
 
@@ -20,7 +22,20 @@ class Actor {
         this._image = value;
     }
 
-    fight() {
-        console.log("fight")
+    get strenght() {
+        return this._strenght;
+    }
+
+    set strenght(value) {
+        this._strenght = value;
+    }
+
+
+    get pv() {
+        return this._pv;
+    }
+
+    set pv(value) {
+        this._pv = value;
     }
 }
