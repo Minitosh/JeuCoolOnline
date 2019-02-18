@@ -1,5 +1,5 @@
-import Player from "/js/Player.js"
-import Monster from "/js/Monster.js"
+import Player from "/js/class/Player.js"
+import Monster from "/js/class/Monster.js"
 
 let player = new Player("Dylan","20","100","");
 console.log(player);

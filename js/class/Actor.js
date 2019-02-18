@@ -1,7 +1,7 @@
 export default class Actor {
-    constructor(name, strenght, pv,  image) {
+    constructor(name, strength, pv,  image) {
         this._name = name;
-        this._strenght = strenght;
+        this._strenght = strength;
         this._pv = pv;
         this._image = image;
     }
