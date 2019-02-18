@@ -6,6 +6,8 @@ export default class Monster extends Actor {
         console.log("Monstre crée !");
     }
 
+
+
     fight() {
         console.log("fight-Monster");
     }
