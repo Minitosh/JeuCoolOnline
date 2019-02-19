@@ -5,10 +5,4 @@ export default class Monster extends Actor {
         super(name, strength, hp, image); // appelle le constructeur parent avec le paramètre
         console.log("Monstre crée !");
     }
-
-
-
-    fight() {
-        console.log("fight-Monster");
-    }
 }

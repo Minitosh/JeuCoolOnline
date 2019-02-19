@@ -38,4 +38,9 @@ export default class Actor {
     set hp(value) {
         this._hp = value;
     }
+
+    equiper(itemPower){
+        this._strenght = this._strenght+itemPower;
+        console.log("La puissance de l'item est de "+itemPower+". La puissance du joueur est maintenant de "+this._strenght)
+    }
 }

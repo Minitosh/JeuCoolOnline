@@ -1,12 +1,10 @@
-class Items {
+export default class Items {
 
     constructor(name, power, range,  image) {
         this._name = name;
-        this._strenght = power;
-        this._hp = range;
-        this._image = image;
         this._power = power;
         this._range = range;
+        this._image = image;
     }
 
 
