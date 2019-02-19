@@ -33,8 +33,16 @@ export default class Actor {
     }
 
     // METHODS
-    equip(power) {
-        console.log(this._name + " gain " + power + " power ! (" + this._strength + "->" + (this._strength + power) + ")");
-        this._strength += power;
+    equip(item) {
+        console.log(this._name + " is now equipped with " + item._name + " !");
+        if (item._power > 0) {
+            console.log(this._name + " gain " + item._power + " power ! (" + this._strength + "->" + (this._strength + item._power) + ")");
+            this._strength += item._power;
+        }
+        if (item._hp > 0) {
+            console.log(this._name + " gain " + item._hp + " hp ! (" + this._hp + "->" + (this._hp + item._hp) + ")");
+            this._strength += item._power;
+        }
+
     }
 }
