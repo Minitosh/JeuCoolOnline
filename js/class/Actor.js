@@ -1,8 +1,8 @@
 export default class Actor {
-    constructor(name, strength, pv,  image) {
+    constructor(name, strength, hp,  image) {
         this._name = name;
         this._strenght = strength;
-        this._pv = pv;
+        this._hp = hp;
         this._image = image;
     }
 
@@ -31,11 +31,11 @@ export default class Actor {
     }
 
 
-    get pv() {
-        return this._pv;
+    get hp() {
+        return this._hp;
     }
 
-    set pv(value) {
-        this._pv = value;
+    set hp(value) {
+        this._hp = value;
     }
 }
