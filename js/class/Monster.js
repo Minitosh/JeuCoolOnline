@@ -1,12 +1,11 @@
 import Actor from "./Actor.js"
 
 export default class Monster extends Actor {
-    constructor(name, strenght, pv, image) {
-        super(name, strenght, pv, image); // appelle le constructeur parent avec le paramètre
-        console.log("Monstre crée !");
-    }
-
-    fight() {
-        console.log("fight-Monster");
+    constructor(name, strength, hp, image) {
+        super(name, strength, hp, image);
+        console.log("Nouveau monstre : " + name
+            + "\n - Strength : " + strength
+            + "\n - HP : " + hp
+            + "\n - Image : " + image);
     }
 }
