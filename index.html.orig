@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu Cool Online</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="module" src="./js/Index.js"></script>
+</head>
+<body>
+
+<form href="#" method="post">
+    <h2><b>Création de votre personnage</b></h2>
+
+    <p>Entrez le nom de votre personnage : </p>
+    <input name="formPlayerName" id="formPlayerName" type="text">
+
+    <p>Entrez l'url de l'image pour votre personnage : </p>
+    <input name="formPlayerUrlImage" id="formPlayerUrlImage" type="text">
+
+    <input type="submit" value="Créer le personnage">
+</form>
+
+
+
+<div class="fight">
+    <p class="namePlayer"></p>
+    <img class="imagePlayer" src="" height="200" width="250"/>
+    <p><br>CONTRE</p>
+    <p class="nameMonster"></p>
+    <img class="imageMonster" src="" height="200" width="250"/>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAWwIxEOw2XQaWSXgPza6vgynSLF5uT1SE",
+        authDomain: "jeucoolonline.firebaseapp.com",
+        databaseURL: "https://jeucoolonline.firebaseio.com",
+        projectId: "jeucoolonline",
+        storageBucket: "jeucoolonline.appspot.com",
+        messagingSenderId: "935085256356"
+    };
+    firebase.initializeApp(config);
+
+</script>
+</body>
+</html>
